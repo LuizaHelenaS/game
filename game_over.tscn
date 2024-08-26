@@ -1,0 +1,76 @@
+[gd_scene load_steps=6 format=3 uid="uid://br082ruhlbnbc"]
+
+[ext_resource type="Script" path="res://game_over.gd" id="1_ex5xv"]
+
+[sub_resource type="FontFile" id="FontFile_8s4h0"]
+subpixel_positioning = 0
+msdf_pixel_range = 14
+msdf_size = 128
+cache/0/16/0/ascent = 0.0
+cache/0/16/0/descent = 0.0
+cache/0/16/0/underline_position = 0.0
+cache/0/16/0/underline_thickness = 0.0
+cache/0/16/0/scale = 1.0
+cache/0/16/0/kerning_overrides/16/0 = Vector2(0, 0)
+
+[sub_resource type="Theme" id="Theme_imh20"]
+Button/colors/font_color = Color(1, 1, 1, 1)
+Button/colors/font_focus_color = Color(1, 1, 0.0235294, 1)
+Button/colors/font_hover_color = Color(1, 1, 0.0235294, 1)
+Button/colors/font_hover_pressed_color = Color(1, 1, 0.0235294, 1)
+Button/colors/font_pressed_color = Color(0.954243, 0.547189, 3.85046e-07, 1)
+Button/fonts/Roboto = SubResource("FontFile_8s4h0")
+
+[sub_resource type="FontFile" id="FontFile_gxo1v"]
+subpixel_positioning = 0
+msdf_pixel_range = 14
+msdf_size = 128
+cache/0/16/0/ascent = 0.0
+cache/0/16/0/descent = 0.0
+cache/0/16/0/underline_position = 0.0
+cache/0/16/0/underline_thickness = 0.0
+cache/0/16/0/scale = 1.0
+cache/0/16/0/kerning_overrides/16/0 = Vector2(0, 0)
+
+[sub_resource type="Theme" id="Theme_rl6b0"]
+Button/colors/font_color = Color(1, 1, 1, 1)
+Button/colors/font_focus_color = Color(1, 1, 0.0235294, 1)
+Button/colors/font_hover_color = Color(1, 1, 0.0235294, 1)
+Button/colors/font_hover_pressed_color = Color(1, 1, 0.0235294, 1)
+Button/colors/font_pressed_color = Color(0.954243, 0.547189, 3.85046e-07, 1)
+Button/fonts/Roboto = SubResource("FontFile_gxo1v")
+
+[node name="game_over" type="CanvasLayer"]
+process_mode = 3
+script = ExtResource("1_ex5xv")
+
+[node name="gameover" type="ColorRect" parent="."]
+offset_right = 484.0
+offset_bottom = 224.0
+color = Color(0, 0, 0, 0.643137)
+
+[node name="sair" type="Button" parent="."]
+anchors_preset = 10
+anchor_right = 1.0
+offset_left = 1.0
+offset_top = 37.0
+offset_right = 1.0
+offset_bottom = 91.0
+grow_horizontal = 2
+theme = SubResource("Theme_imh20")
+text = "GAME
+OVER"
+
+[node name="restart" type="Button" parent="."]
+anchors_preset = 10
+anchor_right = 1.0
+offset_left = 2.0
+offset_top = 126.0
+offset_right = 2.0
+offset_bottom = 157.0
+grow_horizontal = 2
+theme = SubResource("Theme_rl6b0")
+text = "Restart the Game"
+
+[connection signal="pressed" from="sair" to="." method="_on_sair_pressed"]
+[connection signal="pressed" from="restart" to="." method="_on_restart_pressed"]

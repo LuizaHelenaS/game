@@ -1,0 +1,30 @@
+[gd_resource type="Theme" load_steps=6 format=3 uid="uid://d3s348cyinxis"]
+
+[sub_resource type="FontFile" id="FontFile_ygws7"]
+cache/0/16/0/ascent = 0.0
+cache/0/16/0/descent = 0.0
+cache/0/16/0/underline_position = 0.0
+cache/0/16/0/underline_thickness = 0.0
+cache/0/16/0/scale = 1.0
+cache/0/16/0/kerning_overrides/16/0 = Vector2(0, 0)
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_yf0mi"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_jw8tp"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_rv3xg"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_thkpa"]
+
+[resource]
+Button/colors/font_color = Color(1, 1, 1, 1)
+Button/colors/font_focus_color = Color(1, 1, 0.0235294, 1)
+Button/colors/font_hover_color = Color(1, 1, 0.0235294, 1)
+Button/colors/font_hover_pressed_color = Color(1, 1, 0.0235294, 1)
+Button/colors/font_pressed_color = Color(0.954243, 0.547189, 3.85046e-07, 1)
+Button/font_sizes/font_size = 21
+Button/fonts/Roboto = SubResource("FontFile_ygws7")
+Button/styles/disabled = SubResource("StyleBoxEmpty_yf0mi")
+Button/styles/focus = SubResource("StyleBoxEmpty_jw8tp")
+Button/styles/hover = SubResource("StyleBoxEmpty_rv3xg")
+Button/styles/normal = SubResource("StyleBoxEmpty_thkpa")

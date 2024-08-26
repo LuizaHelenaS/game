@@ -1,0 +1,47 @@
+[gd_resource type="Theme" load_steps=7 format=3 uid="uid://duh15vwxyrd11"]
+
+[sub_resource type="FontFile" id="FontFile_be8hc"]
+cache/0/16/0/ascent = 0.0
+cache/0/16/0/descent = 0.0
+cache/0/16/0/underline_position = 0.0
+cache/0/16/0/underline_thickness = 0.0
+cache/0/16/0/scale = 1.0
+cache/0/16/0/kerning_overrides/16/0 = Vector2(0, 0)
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_faqrk"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_dvuox"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_38v1m"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_nvdp7"]
+
+[sub_resource type="FontFile" id="FontFile_qkpu8"]
+cache/0/16/0/ascent = 0.0
+cache/0/16/0/descent = 0.0
+cache/0/16/0/underline_position = 0.0
+cache/0/16/0/underline_thickness = 0.0
+cache/0/16/0/scale = 1.0
+cache/0/16/0/kerning_overrides/16/0 = Vector2(0, 0)
+cache/0/16/0/kerning_overrides/21/0 = Vector2(0, 0)
+cache/0/21/0/ascent = 0.0
+cache/0/21/0/descent = 0.0
+cache/0/21/0/underline_position = 0.0
+cache/0/21/0/underline_thickness = 0.0
+cache/0/21/0/scale = 1.0
+cache/0/21/0/kerning_overrides/16/0 = Vector2(0, 0)
+cache/0/21/0/kerning_overrides/21/0 = Vector2(0, 0)
+
+[resource]
+default_font = SubResource("FontFile_qkpu8")
+Button/colors/font_color = Color(1, 1, 1, 1)
+Button/colors/font_focus_color = Color(1, 1, 0.0235294, 1)
+Button/colors/font_hover_color = Color(1, 1, 0.0235294, 1)
+Button/colors/font_hover_pressed_color = Color(1, 1, 0.0235294, 1)
+Button/colors/font_pressed_color = Color(0.954243, 0.547189, 3.85046e-07, 1)
+Button/font_sizes/font_size = 21
+Button/fonts/Roboto = SubResource("FontFile_be8hc")
+Button/styles/disabled = SubResource("StyleBoxEmpty_faqrk")
+Button/styles/focus = SubResource("StyleBoxEmpty_dvuox")
+Button/styles/hover = SubResource("StyleBoxEmpty_38v1m")
+Button/styles/normal = SubResource("StyleBoxEmpty_nvdp7")
